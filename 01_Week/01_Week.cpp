@@ -6,6 +6,7 @@
 int main()
 {
     std::cout << "01_Week - Hello World!\n";
+    std::cout << "Git\n";
 
 
 
@@ -38,7 +39,7 @@ int main()
     std::cout << "\n iPtr address = " << &iPtr;
     std::cout << "\n size of iPtr = " << sizeof(iPtr);
     std::cout << "\n value of iPtr points to is " << *iPtr;
-    std::cout << "\n value of iPtr points to is " << *((&lVal) + 1);
+    //std::cout << "\n value of iPtr points to is " << *((&lVal) + 1);
 
 
 
