@@ -41,6 +41,20 @@ int main()
     std::cout << "\n value of iPtr points to is " << *iPtr;
     //std::cout << "\n value of iPtr points to is " << *((&lVal) + 1);
 
+    // Heap memory 
+    char* chTemp = NULL;
+    chTemp = (char*)malloc(20);
+    memset(chTemp, '\0', 20);
+    // Do stuff with the memory, then 
+    free(chTemp);
+    chTemp = NULL; // once we free up the memory, point it to NULL // GOOD PRACTICE 
+    std::cout << "\n\n End of program ";
+
+    // can take snapshots of our heap memory at any point 
+
+    // * EVERY TIME WE ALLOCATE NEW MEMORY WE NEED TO FREE UP THE OLD MEMORY 
+    // * GARBAGE COLLECTION IS ONE OF THE REASONS THAT JAVA RUNS SLOWER 
+
 
 
 
